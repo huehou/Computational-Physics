@@ -14,9 +14,10 @@ t = [0.]
 omega = omega0
 
 while t[end] <= 10
+	omega1 = omega - g/l*theta[end]*dt
 	push!(theta, theta[end] + omega*dt)
 	push!(t, t[end]+dt)
-	global omega = omega - g/l*theta[end]*dt
+	global omega = omega1
 end
 
 # res = plot(t, theta, 
