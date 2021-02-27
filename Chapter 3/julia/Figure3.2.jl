@@ -42,7 +42,7 @@ function main()
 	annotate("Simple Pendulum - Euler method", xy = (1, 1.5), fontsize = 14)
 	annotate("Length = 1m    time step = 0.04 s", xy = (1, 1.2), fontsize = 14)
 
-	savefig("Figure3.3.pdf", bbox_inches = "tight")
+	savefig("Figure3.2.pdf", bbox_inches = "tight")
 	
 end
 
