@@ -61,7 +61,7 @@ function main()
 	axs[3].plot(t3, theta3)
 	axs[3].set_ylim([-4,4])
 	axs[3].set_yticks([-4,-3,-2,-1,0,1,2,3,4])
-	axs[3].set_yticklabels(["", "", "", "", 0, "", "", 3])
+	axs[3].set_yticklabels(["", "", "", "", 0, "", "", 3, ""])
 	axs[3].spines["top"].set_color("none")
 	axs[3].tick_params(direction = "in", right = true, top = false, bottom = true)
 	axs[3].annotate("\$F_D = 1.2\$", xy = (40,3.5), fontsize = 14)
@@ -73,5 +73,5 @@ end
 
 main()
 
-# pygui(true)
-# show()
+pygui(true)
+show()
