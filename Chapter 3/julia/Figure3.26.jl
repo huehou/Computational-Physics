@@ -52,6 +52,7 @@ function main()
 	ylim([0,3])
 	xticks([i for i = 0:0.5:2])
 	yticks([i for i = 0:1:3])
+	annotate("Pendulum power spectrum\n\$F_D = 0.5\$", xy = (0.5, 2.6), fontsize = 14)
 	savefig("Figure3.26left.pdf", bbox_inches = "tight")
 
 	F2 = fftshift(fft(theta2))
@@ -64,6 +65,7 @@ function main()
 	ylim([0,3])
 	xticks([i for i = 0:0.5:2])
 	yticks([i for i = 0:1:3])
+	annotate("Pendulum power spectrum\n\$F_D = 0.95\$", xy = (0.5, 2.6), fontsize = 14)
 	savefig("Figure3.26right.pdf", bbox_inches = "tight")
 
 end
